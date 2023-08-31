@@ -141,13 +141,8 @@ a {
   display: block;
   /* width: 350px;
   height: 350px; */
-  /* background-color: aqua; */
   width: 100%;
   margin-inline: auto;
-}
-.project-img img {
-  /* width: 350px;
-  height: 350px; */
 }
 
 .project-links {
