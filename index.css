@@ -1,0 +1,233 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+  /* width: 100%; */
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  /* https://stackoverflow.com/questions/5218927/z-index-not-working-with-fixed-positioning  */
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* https://codepen.io/tag/mobile-menu */
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Fronts */
+/* body {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif; 
+} */
+
+/* desktop navbar */
+.navbar-parent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+/* mobile navbar */
+@media (max-width: 769px) {
+  .navbar-parent {
+    /* width: 345px; */
+    width: auto;
+    padding: 1rem 1rem 0;
+  }
+}
+
+/* mobile hero bg */
+.header-container {
+  background: url("./images/hero-bg-medium.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+  /* width: 100%;  */
+  /* height: 400px; */
+  height: 500px;
+  width: 100%;
+  background-position: center;
+}
+.hero-bg-text {
+  width: 100%;
+  text-align: center;
+  transform: translateY(285px);
+}
+
+/* mobile projects section styles */
+.projects-title {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.projects-container {
+  padding-top: 4rem;
+}
+.works-item {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.works-item p {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-img {
+  display: block;
+  width: 350px;
+  height: 350px;
+  background-color: aqua;
+  margin-inline: auto;
+}
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.project-links a {
+  cursor: pointer;
+}
+
+/* Mobile Footer styles */
+.footer-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  background-color: grey;
+}
+.footer-container a {
+  margin-bottom: 2rem;
+  display: block;
+}
+.footer-container p {
+  margin-bottom: 1.5rem;
+}
+
+/* desktop styles */
+@media (min-width: 769px) {
+  /* hero bg */
+  .header-container {
+    background: url("./images/hero-bg-full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    padding-top: 2rem;
+  }
+  .hero-bg-text {
+    transform: translateY(75px);
+  }
+
+  /* projects stlyes */
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+    width: 100%;
+    max-width: 1460px;
+    margin-inline: auto;
+  }
+
+  /* Footer styles Desktop */
+  .footer-container {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+
+  .footer-container h1 {
+    margin-bottom: 2rem;
+  }
+
+  .footer-container p {
+    display: inline-block;
+  }
+  .footer-container p:last-child {
+    margin-left: 2rem;
+  }
+}
+
+/* smaller desktop sizes */
+@media (min-width: 769px) and (max-width: 1088px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .navbar-parent {
+    padding: 2rem;
+  }
+}
+
+/* smaller mobile styles */
+@media (max-width: 425px) {
+  .navbar-parent {
+    padding: 1rem;
+  }
+}
