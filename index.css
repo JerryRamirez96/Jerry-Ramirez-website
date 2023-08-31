@@ -139,11 +139,17 @@ a {
 
 .project-img {
   display: block;
-  width: 350px;
-  height: 350px;
-  background-color: aqua;
+  /* width: 350px;
+  height: 350px; */
+  /* background-color: aqua; */
+  width: 100%;
   margin-inline: auto;
 }
+.project-img img {
+  /* width: 350px;
+  height: 350px; */
+}
+
 .project-links {
   display: flex;
   justify-content: center;
@@ -192,7 +198,8 @@ a {
     grid-auto-rows: minmax(100px, auto);
 
     width: 100%;
-    max-width: 1460px;
+    /* max-width: 1460px; */
+    max-width: 1550px;
     margin-inline: auto;
   }
 
