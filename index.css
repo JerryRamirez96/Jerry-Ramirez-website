@@ -91,9 +91,10 @@ a {
   margin-inline: auto;
 }
 
-.navbar-parent a,
-.navbar-parent p {
-  font-size: 3rem;
+.header-container a,
+.header-container p {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* mobile navbar */
