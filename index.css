@@ -119,6 +119,10 @@ a {
 }
 
 /* navbar styles */
+.header-container nav a,
+.header-container nav p {
+  color: black;
+}
 .header-container nav a:hover {
   text-decoration: underline;
 }
@@ -131,6 +135,8 @@ a {
 
 .projects-container {
   padding-top: 4rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 .works-item {
   width: 100%;
@@ -170,11 +176,12 @@ a {
   padding-bottom: 2rem;
   width: 100%;
   text-align: center;
-  background-color: grey;
+  /* background-color: grey; */
 }
 .footer-container a {
-  margin-bottom: 2rem;
   display: block;
+  color: black;
+  margin-bottom: 2rem;
 }
 .footer-container p {
   margin-bottom: 1.5rem;
@@ -199,7 +206,6 @@ a {
   .header-container nav p {
     font-size: 1.5rem;
     font-weight: 400;
-    color: black;
   }
   .hero-bg-text h1 {
     font-size: 3rem;
@@ -235,7 +241,13 @@ a {
   }
 
   .footer-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 2rem;
+  }
+  .footer-container p,
+  .footer-container a {
+    font-size: 1.2rem;
   }
 
   .footer-container p {
