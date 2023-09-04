@@ -91,6 +91,11 @@ a {
   margin-inline: auto;
 }
 
+.navbar-parent a,
+.navbar-parent p {
+  font-size: 3rem;
+}
+
 /* mobile navbar */
 @media (max-width: 769px) {
   .navbar-parent {
