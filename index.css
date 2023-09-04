@@ -91,21 +91,6 @@ a {
   margin-inline: auto;
 }
 
-.header-container a,
-.header-container p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: black;
-}
-.hero-bg-text h1 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-.hero-bg-text h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
 /* mobile navbar */
 @media (max-width: 769px) {
   .navbar-parent {
@@ -133,6 +118,11 @@ a {
   transform: translateY(285px);
 }
 
+/* navbar styles */
+.header-container nav a:hover {
+  text-decoration: underline;
+}
+
 /* mobile projects section styles */
 .projects-title {
   padding-top: 2rem;
@@ -148,6 +138,8 @@ a {
 }
 .works-item p {
   text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 0.8rem;
 }
@@ -164,7 +156,12 @@ a {
   gap: 5rem;
 }
 .project-links a {
+  font-size: 0.95rem;
+  color: black;
   cursor: pointer;
+}
+.project-links a:hover {
+  text-decoration: underline;
 }
 
 /* Mobile Footer styles */
@@ -196,6 +193,25 @@ a {
   }
   .hero-bg-text {
     transform: translateY(75px);
+  }
+
+  .header-container nav a,
+  .header-container nav p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+  }
+  .hero-bg-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .hero-bg-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .projects-title h1 {
+    font-size: 3rem;
   }
 
   /* projects stlyes */
