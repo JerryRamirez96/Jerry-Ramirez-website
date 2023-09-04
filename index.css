@@ -94,6 +94,15 @@ a {
 .header-container a,
 .header-container p {
   font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
+}
+.hero-bg-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero-bg-text h2 {
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
